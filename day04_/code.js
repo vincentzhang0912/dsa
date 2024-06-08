@@ -77,6 +77,7 @@ class SinglyLinkedList{
           let poppedValue =  currentNode.data;
           return poppedValue;
       }
+    }
 
 //unshift: adding a new node to the beginning og the linked list
   //function should accept a value
@@ -86,7 +87,7 @@ class SinglyLinkedList{
   //set the head property on th linked list to the newly created node
   //increment the length by 1
   //return the linked list
-  unshift(data){ //insertAtStart(), insertAtHead()
+    unshift(data) {//insertAtStart(), insertAtHead()
       let newNode = new Node(data);
       
       if(!this.head){
@@ -102,9 +103,9 @@ class SinglyLinkedList{
       
       this.length++;
       return this;
-  }
+    }
 
-  }
+
 
 //shift: removing the first node in the linked list
   //if there are no nodes, return undefined
