@@ -1,2 +1,3 @@
-let a = [1, 2, 3]
-console.log(a.toString())
+let a ="1";
+
+console.log(parseInt(a))
