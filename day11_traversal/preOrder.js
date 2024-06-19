@@ -38,6 +38,23 @@ function preOrder(root){
   return [root.data,...leftValues, ...rightValues]
 }
 
+//recursive approach 02
+/*
+preOrder(){
+  let result = [];
+  function traverse(node){
+    result.push(node.value)
+    if (node.left){
+      traverse(node.left);
+    }
+    if (node.right){
+      traverse(node.right);
+    }
+  }
+  traverse(this.root);
+  return result
+}
+  */
 let root = new Node(3);
 root.left = new Node(9);
 root.right = new Node(20);
