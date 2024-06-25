@@ -24,7 +24,9 @@ class Graph{
           let del = q.dequeue();
           console.log(del);
           for(let n of this.edges[del]){
-              if(!visited.includes(n.node)){
+              if(!visited.includes(n.node) ){
+                //q.items dont have n.node
+                
                   q.enqueue(n.node);
                   visited.push(n.node);
               }
